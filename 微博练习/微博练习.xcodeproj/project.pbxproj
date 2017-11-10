@@ -12,7 +12,6 @@
 		845DBD321FB01C310029B1A1 /* ____Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845DBD311FB01C310029B1A1 /* ____Tests.swift */; };
 		845DBD3D1FB01C310029B1A1 /* ____UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845DBD3C1FB01C310029B1A1 /* ____UITests.swift */; };
 		845DBD551FB03BBA0029B1A1 /* QJTMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845DBD541FB03BBA0029B1A1 /* QJTMainViewController.swift */; };
-		845DBD571FB03BDD0029B1A1 /* QJTMainController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845DBD561FB03BDD0029B1A1 /* QJTMainController.swift */; };
 		845DBD591FB03C270029B1A1 /* QJTBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845DBD581FB03C260029B1A1 /* QJTBaseViewController.swift */; };
 		845DBD5B1FB03C850029B1A1 /* QJTHomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845DBD5A1FB03C850029B1A1 /* QJTHomeController.swift */; };
 		845DBD5D1FB03CA10029B1A1 /* QJTDiscoverController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845DBD5C1FB03CA10029B1A1 /* QJTDiscoverController.swift */; };
@@ -30,6 +29,10 @@
 		845DBD851FB03E740029B1A1 /* NSString+CZHash.m in Sources */ = {isa = PBXBuildFile; fileRef = 845DBD761FB03E740029B1A1 /* NSString+CZHash.m */; };
 		845DBD861FB03E740029B1A1 /* NSAttributedString+CZAdditon.m in Sources */ = {isa = PBXBuildFile; fileRef = 845DBD791FB03E740029B1A1 /* NSAttributedString+CZAdditon.m */; };
 		845DBD871FB03E740029B1A1 /* NSArray+Log.m in Sources */ = {isa = PBXBuildFile; fileRef = 845DBD7A1FB03E740029B1A1 /* NSArray+Log.m */; };
+		845DBD8B1FB045410029B1A1 /* Bundle+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845DBD8A1FB045410029B1A1 /* Bundle+Extensions.swift */; };
+		845DBD8D1FB05C610029B1A1 /* QJTNavController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845DBD8C1FB05C610029B1A1 /* QJTNavController.swift */; };
+		845DBD901FB150700029B1A1 /* QJTDemoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845DBD8F1FB150700029B1A1 /* QJTDemoViewController.swift */; };
+		84DBB9A01FB2DB13004EAA53 /* UIBarButtonItem+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84DBB99F1FB2DB13004EAA53 /* UIBarButtonItem+Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,7 +64,6 @@
 		845DBD3C1FB01C310029B1A1 /* ____UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "____UITests.swift"; sourceTree = "<group>"; };
 		845DBD3E1FB01C310029B1A1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		845DBD541FB03BBA0029B1A1 /* QJTMainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QJTMainViewController.swift; sourceTree = "<group>"; };
-		845DBD561FB03BDD0029B1A1 /* QJTMainController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QJTMainController.swift; sourceTree = "<group>"; };
 		845DBD581FB03C260029B1A1 /* QJTBaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QJTBaseViewController.swift; sourceTree = "<group>"; };
 		845DBD5A1FB03C850029B1A1 /* QJTHomeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QJTHomeController.swift; sourceTree = "<group>"; };
 		845DBD5C1FB03CA10029B1A1 /* QJTDiscoverController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QJTDiscoverController.swift; sourceTree = "<group>"; };
@@ -93,6 +95,10 @@
 		845DBD7A1FB03E740029B1A1 /* NSArray+Log.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+Log.m"; sourceTree = "<group>"; };
 		845DBD7B1FB03E740029B1A1 /* NSString+CZPath.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+CZPath.h"; sourceTree = "<group>"; };
 		845DBD881FB03EA30029B1A1 /* Weibo-Bridge.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Weibo-Bridge.h"; sourceTree = "<group>"; };
+		845DBD8A1FB045410029B1A1 /* Bundle+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Bundle+Extensions.swift"; sourceTree = "<group>"; };
+		845DBD8C1FB05C610029B1A1 /* QJTNavController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QJTNavController.swift; sourceTree = "<group>"; };
+		845DBD8F1FB150700029B1A1 /* QJTDemoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QJTDemoViewController.swift; sourceTree = "<group>"; };
+		84DBB99F1FB2DB13004EAA53 /* UIBarButtonItem+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIBarButtonItem+Extensions.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,6 +126,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		84564A7C1FB55EAD008C195F /* 主控制器 */ = {
+			isa = PBXGroup;
+			children = (
+				845DBD541FB03BBA0029B1A1 /* QJTMainViewController.swift */,
+				845DBD8C1FB05C610029B1A1 /* QJTNavController.swift */,
+			);
+			path = "主控制器";
+			sourceTree = "<group>";
+		};
 		845DBD101FB01C310029B1A1 = {
 			isa = PBXGroup;
 			children = (
@@ -228,8 +243,8 @@
 		845DBD501FB03B8D0029B1A1 /* Main */ = {
 			isa = PBXGroup;
 			children = (
-				845DBD541FB03BBA0029B1A1 /* QJTMainViewController.swift */,
-				845DBD561FB03BDD0029B1A1 /* QJTMainController.swift */,
+				845DBD8E1FB150430029B1A1 /* 测试 */,
+				84564A7C1FB55EAD008C195F /* 主控制器 */,
 				845DBD581FB03C260029B1A1 /* QJTBaseViewController.swift */,
 			);
 			path = Main;
@@ -252,6 +267,7 @@
 		845DBD531FB03B8D0029B1A1 /* Tools(工具类) */ = {
 			isa = PBXGroup;
 			children = (
+				845DBD891FB045370029B1A1 /* Extensions */,
 				845DBD621FB03E740029B1A1 /* Additions */,
 			);
 			path = "Tools(工具类)";
@@ -287,6 +303,23 @@
 				845DBD7B1FB03E740029B1A1 /* NSString+CZPath.h */,
 			);
 			path = Additions;
+			sourceTree = "<group>";
+		};
+		845DBD891FB045370029B1A1 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				845DBD8A1FB045410029B1A1 /* Bundle+Extensions.swift */,
+				84DBB99F1FB2DB13004EAA53 /* UIBarButtonItem+Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		845DBD8E1FB150430029B1A1 /* 测试 */ = {
+			isa = PBXGroup;
+			children = (
+				845DBD8F1FB150700029B1A1 /* QJTDemoViewController.swift */,
+			);
+			path = "测试";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -423,18 +456,21 @@
 			buildActionMask = 2147483647;
 			files = (
 				845DBD5B1FB03C850029B1A1 /* QJTHomeController.swift in Sources */,
+				84DBB9A01FB2DB13004EAA53 /* UIBarButtonItem+Extensions.swift in Sources */,
 				845DBD801FB03E740029B1A1 /* NSString+CZBase64.m in Sources */,
 				845DBD611FB03CC80029B1A1 /* QJTProfileController.swift in Sources */,
 				845DBD831FB03E740029B1A1 /* NSObject+CZRuntime.m in Sources */,
 				845DBD861FB03E740029B1A1 /* NSAttributedString+CZAdditon.m in Sources */,
 				845DBD871FB03E740029B1A1 /* NSArray+Log.m in Sources */,
+				845DBD8B1FB045410029B1A1 /* Bundle+Extensions.swift in Sources */,
 				845DBD7E1FB03E740029B1A1 /* UIScreen+CZAddition.m in Sources */,
 				845DBD1D1FB01C310029B1A1 /* AppDelegate.swift in Sources */,
 				845DBD5D1FB03CA10029B1A1 /* QJTDiscoverController.swift in Sources */,
 				845DBD5F1FB03CB50029B1A1 /* QJTMessageController.swift in Sources */,
 				845DBD821FB03E740029B1A1 /* UIButton+CZAddition.m in Sources */,
-				845DBD571FB03BDD0029B1A1 /* QJTMainController.swift in Sources */,
 				845DBD851FB03E740029B1A1 /* NSString+CZHash.m in Sources */,
+				845DBD901FB150700029B1A1 /* QJTDemoViewController.swift in Sources */,
+				845DBD8D1FB05C610029B1A1 /* QJTNavController.swift in Sources */,
 				845DBD841FB03E740029B1A1 /* UIViewController+CZAddition.m in Sources */,
 				845DBD551FB03BBA0029B1A1 /* QJTMainViewController.swift in Sources */,
 				845DBD591FB03C270029B1A1 /* QJTBaseViewController.swift in Sources */,
