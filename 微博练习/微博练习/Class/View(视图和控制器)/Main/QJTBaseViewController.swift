@@ -14,12 +14,13 @@ import UIKit
 class QJTBaseViewController: UIViewController {
     
     //自定义导航条
-    let navtionBar = UINavigationBar(frame: CGRect(x: 0, y: 0, width: UIScreen.cz_screenWidth(), height: 64 + 20))
+    let navtionBar = UINavigationBar(frame: CGRect(x: 0, y: 0, width: UIScreen.cz_screenWidth(), height: 64))
     //自定义导航条目
     let navItem = UINavigationItem()
-    
-    //添加tableview
+    //添加tableview-->如果用户不登录,就不创建
     var tableView = UITableView()
+    //定义刷新控件
+    var refreshControl = UIRefreshControl()
     
     
 
@@ -31,7 +32,7 @@ class QJTBaseViewController: UIViewController {
     }
     
     //加载数据,具体由子类实现
-    func loadData()  {
+    @objc func loadData()  {
         
     }
     
@@ -48,6 +49,7 @@ extension QJTBaseViewController{
     @objc func setupUI(){
         
         view.backgroundColor = UIColor.cz_random()
+        automaticallyAdjustsScrollViewInsets = false
         
         setupNavtion()
         setupTableView()
@@ -56,10 +58,19 @@ extension QJTBaseViewController{
     //添加tableview
     func setupTableView() {
         tableView = UITableView(frame: view.bounds, style: .plain)
-//        view.addSubview(tableView)
         tableView.dataSource = self
         tableView.delegate = self
+        //设置内容缩进
+        tableView.contentInset = UIEdgeInsets(top: navtionBar.bounds.height  - 20, left: 0, bottom: 0, right: 0)
         view.insertSubview(tableView, belowSubview: navtionBar) //让tableview在nav下面显示
+        
+        //设置刷新控件
+        //1>初始化
+        refreshControl = UIRefreshControl()
+        //2>添加到表格
+        tableView.addSubview(refreshControl)
+        //3>设置触发事件
+        refreshControl.addTarget(self, action: #selector(loadData), for: .valueChanged)
     }
     
     func setupNavtion() {
@@ -68,7 +79,9 @@ extension QJTBaseViewController{
         //将item设置给navbar
         navtionBar.items = [navItem]
         //设置navbar渲染颜色
-        navtionBar.barTintColor = UIColor.cz_color(withHex: 0xF6F6F6)
+//        navtionBar.barTintColor = UIColor.cz_color(withHex: 0xF6F6F6)
+        navtionBar.backgroundColor = UIColor.orange
+        
     }
     
 }

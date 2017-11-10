@@ -24,8 +24,14 @@ class QJTHomeController: QJTBaseViewController {
     private var statusList = [String]()
     
     override func loadData() {
-        for i in 1..<10 {
-            statusList.insert(i.description, at: 0)
+        print("-------加载数据--------")
+        //模拟延时加载数据
+        DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 2) {
+            for i in 0..<20 {
+                self.statusList.insert(i.description, at: 0)
+            }
+            self.refreshControl.endRefreshing()
+            self.tableView.reloadData()
         }
     }
 
@@ -48,8 +54,9 @@ extension QJTHomeController{
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: <#T##String#>, for: <#T##IndexPath#>)
-        
+        let cell = tableView.dequeueReusableCell(withIdentifier: cellID, for: indexPath)
+        cell.textLabel?.text = statusList[indexPath.row]
+        return cell
     }
 }
 
@@ -60,15 +67,11 @@ extension QJTHomeController{
     override func setupUI() {
         super.setupUI()
         
-        //swift调用oc返回instancetype的方法,判断不出是否可选
-        navigationItem.leftBarButtonItem = UIBarButtonItem(title: "好友", fontSize: 16, target: self, action: #selector(showFriend))
+        //设置导航栏按钮
+        navItem.leftBarButtonItem = UIBarButtonItem(title: "好友", fontSize: 16, target: self, action: #selector(showFriend))
         
-        let navBtn:UIButton = UIButton.cz_textButton("好友", fontSize:16, normalColor: UIColor.darkGray, highlightedColor: UIColor.orange )
-        navBtn.addTarget(self, action: #selector(showFriend), for: .touchUpInside)
-        navItem.leftBarButtonItem = UIBarButtonItem(customView: navBtn)
-        
-        //这种方式无法高亮显示点击文字
-//        navigationItem.leftBarButtonItem = UIBarButtonItem(title: "好友", style: .plain, target: self, action: #selector(showFriend))
+        //注册原型cell
+        tableView.register(UITableViewCell.self, forCellReuseIdentifier: cellID)
     }
     
 
